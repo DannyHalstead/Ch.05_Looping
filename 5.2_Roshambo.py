@@ -31,7 +31,7 @@ else:
     Interpret = "Scissors"
 print ("The AI choose", Interpret)
 
-if UserChoice +1 == AIChoice: #Left off here seeing how wins
+if UserChoice +1 == AIChoice: #Left off here seeing whow wins
     print("You won.")
 elif UserChoice == AIChoice:
     print ("You tied.")
