@@ -10,14 +10,30 @@ Add conditional statements to figure out who wins and keep the records
 When the user quits print a win/loss record
 
 '''
+import random
 
+print("You are being forced to play rocket paper scissors for the rest of your life.")
+UserChoice = int(input("Press 1 for Rock, Press 2 for Paper, Press 3 for Scissors."))
+if UserChoice == 1:
+    YourInterpret = "Rock"
+elif UserChoice == 2:
+    YourInterpret = "Paper"
+else:
+    YourInterpret = "Scissors"
+print ("You choose", YourInterpret)
 
+AIChoice = random.randint(1,3) #Get it because Ai don't have a choice haha pure comedy
+if AIChoice == 1:
+    Interpret = "Rock"
+elif AIChoice == 2:
+    Interpret = "Paper"
+else:
+    Interpret = "Scissors"
+print ("The AI choose", Interpret)
 
-
-
-
-
-
-
-
-
+if UserChoice +1 == AIChoice: #Left off here seeing how wins
+    print("You won.")
+elif UserChoice == AIChoice:
+    print ("You tied.")
+else:
+    print("You lost.")
