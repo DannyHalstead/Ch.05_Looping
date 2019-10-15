@@ -31,9 +31,16 @@ else:
     Interpret = "Scissors"
 print ("The AI choose", Interpret)
 
-if UserChoice +1 == AIChoice: #Left off here seeing who wins
-    print("You won.")
-elif UserChoice == AIChoice:
-    print ("You tied.")
-else:
+if UserChoice == 3 and  AIChoice == 1: #Without this line you would win if you use scisors and the computer uses rock
     print("You lost.")
+    LossCount += 1
+else:
+    if UserChoice +1 == AIChoice:
+        print("You lost.")
+        LossCount += 1
+    elif UserChoice == AIChoice:
+        print ("You tied.")
+        TieCount += 1
+    else:
+        print("You won.")
+        WinCount += 1
