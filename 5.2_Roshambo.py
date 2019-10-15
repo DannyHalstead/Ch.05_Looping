@@ -17,15 +17,17 @@ LossCount = 0
 Done = False
 
 while Done == False:
-    UserChoice = int(input("Press 1 for Rock, Press 2 for Paper, Press 3 for Scissors, Press anything else to quit."))
+    UserChoice = int(input("Press 1 for Rock, Press 2 for Paper, Press 3 for Scissors, Press 4 to quit."))
     if UserChoice == 1:
         YourInterpret = "Rock"
     elif UserChoice == 2:
         YourInterpret = "Paper"
     elif UserChoice == 3:
         YourInterpret = "Scissors"
-    else:
+    elif UserChoice == 4:
         Done = True
+        continue
+
     print ("You choose", YourInterpret)
     AIChoice = random.randint(1,3) #Get it because Ai don't have a choice haha pure comedy
     if AIChoice == 1:
@@ -35,6 +37,7 @@ while Done == False:
     else:
         Interpret = "Scissors"
     print ("The AI choose", Interpret)
+
     if UserChoice == 3 and  AIChoice == 1: #Without this line you would win if you use scisors and the computer uses rock
         print("You lost.")
         LossCount += 1
