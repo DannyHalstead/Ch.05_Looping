@@ -11,36 +11,44 @@ When the user quits print a win/loss record
 
 '''
 import random
+WinCount = 0
+TieCount = 0
+LossCount = 0
+Done = False
 
-print("You are being forced to play rocket paper scissors for the rest of your life.")
-UserChoice = int(input("Press 1 for Rock, Press 2 for Paper, Press 3 for Scissors."))
-if UserChoice == 1:
-    YourInterpret = "Rock"
-elif UserChoice == 2:
-    YourInterpret = "Paper"
-else:
-    YourInterpret = "Scissors"
-print ("You choose", YourInterpret)
-
-AIChoice = random.randint(1,3) #Get it because Ai don't have a choice haha pure comedy
-if AIChoice == 1:
-    Interpret = "Rock"
-elif AIChoice == 2:
-    Interpret = "Paper"
-else:
-    Interpret = "Scissors"
-print ("The AI choose", Interpret)
-
-if UserChoice == 3 and  AIChoice == 1: #Without this line you would win if you use scisors and the computer uses rock
-    print("You lost.")
-    LossCount += 1
-else:
-    if UserChoice +1 == AIChoice:
+while Done == False:
+    UserChoice = int(input("Press 1 for Rock, Press 2 for Paper, Press 3 for Scissors, Press anything else to quit."))
+    if UserChoice == 1:
+        YourInterpret = "Rock"
+    elif UserChoice == 2:
+        YourInterpret = "Paper"
+    elif UserChoice == 3:
+        YourInterpret = "Scissors"
+    else:
+        Done = True
+    print ("You choose", YourInterpret)
+    AIChoice = random.randint(1,3) #Get it because Ai don't have a choice haha pure comedy
+    if AIChoice == 1:
+        Interpret = "Rock"
+    elif AIChoice == 2:
+        Interpret = "Paper"
+    else:
+        Interpret = "Scissors"
+    print ("The AI choose", Interpret)
+    if UserChoice == 3 and  AIChoice == 1: #Without this line you would win if you use scisors and the computer uses rock
         print("You lost.")
         LossCount += 1
-    elif UserChoice == AIChoice:
-        print ("You tied.")
-        TieCount += 1
     else:
-        print("You won.")
-        WinCount += 1
+        if UserChoice +1 == AIChoice:
+            print("You lost.")
+            LossCount += 1
+        elif UserChoice == AIChoice:
+            print ("You tied.")
+            TieCount += 1
+        else:
+            print("You won.")
+            WinCount += 1
+else:
+    print("You won this many times:", WinCount)
+    print("You tied this many times:", TieCount)
+    print("You lost this many times:", LossCount)
