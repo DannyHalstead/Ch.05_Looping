@@ -17,15 +17,17 @@ LossCount = 0
 Done = False
 
 while Done == False:
-    UserChoice = int(input("Press 1 for Rock, Press 2 for Paper, Press 3 for Scissors, Press 4 to quit."))
+    UserChoice = int(input("Press 1 for Rock, Press 2 for Paper, Press 3 for Scissors, Press 5 to quit."))
     if UserChoice == 1:
         YourInterpret = "Rock"
     elif UserChoice == 2:
         YourInterpret = "Paper"
     elif UserChoice == 3:
         YourInterpret = "Scissors"
-    elif UserChoice == 4:
+    elif UserChoice == 5:
         Done = True
+        break
+    else:
         continue
 
     print ("You choose", YourInterpret)
@@ -51,7 +53,7 @@ while Done == False:
         else:
             print("You won.")
             WinCount += 1
-else:
-    print("You won this many times:", WinCount)
-    print("You tied this many times:", TieCount)
-    print("You lost this many times:", LossCount)
+
+print("You won this many times:", WinCount)
+print("You tied this many times:", TieCount)
+print("You lost this many times:", LossCount)
