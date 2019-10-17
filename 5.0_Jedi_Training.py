@@ -3,18 +3,18 @@
 '''
  1. Make the following program work.
    '''  
-     print("This program takes three numbers and returns the sum.")
-     total = 0
 
-     for i in range(3):
-         x = input("Enter a number: ")
-         total = total + i
-     print("The total is:", x)
+print("This program takes three numbers and returns the sum.")
+Total = 0
+for i in range(3):
+    NumberBeingAdded = float(input("Enter a number: "))
+    Total += NumberBeingAdded
+print("The total is:",Total)
   
 
 
 '''
-  2. Write a Python program that will use a FOR loop to print the even
+  2. Write a Python program that will use a FOR loop to print the even.              LEFT OFF HERE
      numbers from 2 to 100, inclusive.
 '''
 
