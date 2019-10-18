@@ -66,14 +66,19 @@ PositiveCount = 0
 NegetiveCount =0
 ZeroCount = 0
 print("You are going to enter seven numbers")
+
 for i in range (7):
     userinput=float(input("Number to enter."))
     if userinput > 1:
         PositiveCount += 1
     elif userinput < 1:
         NegetiveCount += 1
-    else:
+    elif userinput == -0:
         ZeroCount += 1
+        print("Why would you even enter -0?")
+    else:
+        ZeroCount +=1
+
     total += userinput
 print("The total of your numbers is:", total)
 print("You had this many positive numbers:", PositiveCount)
