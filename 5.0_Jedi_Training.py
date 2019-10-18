@@ -14,7 +14,7 @@ print("The total is:",Total)
 
 
 '''
-  2. Write a Python program that will use a FOR loop to print the even.              LEFT OFF HERE
+  2. Write a Python program that will use a FOR loop to print the even.              
      numbers from 2 to 100, inclusive.
 '''
 print('Watch in amazement as the odd numbers from 2-100 are printed.')
@@ -40,10 +40,12 @@ print("Blastoff!")
 
 
 '''
-  4. Write a program that prints a random integer from 1 to 10 (inclusive).                    Start Here!
+  4. Write a program that prints a random integer from 1 to 10 (inclusive).                    
 '''
 
-
+import random
+random=random.randint(1,10)
+print("Your random number is:", random)
 
 
 
@@ -58,3 +60,22 @@ print("Blastoff!")
      if statements.
       
 '''
+
+total = 0
+PositiveCount = 0
+NegetiveCount =0
+ZeroCount = 0
+print("You are going to enter seven numbers")
+for i in range (7):
+    userinput=float(input("Number to enter."))
+    if userinput > 1:
+        PositiveCount += 1
+    elif userinput < 1:
+        NegetiveCount += 1
+    else:
+        ZeroCount += 1
+    total += userinput
+print("The total of your numbers is:", total)
+print("You had this many positive numbers:", PositiveCount)
+print("You had this many negetive numbers:", NegetiveCount)
+print("You had this many zeros:", ZeroCount)
