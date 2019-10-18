@@ -74,8 +74,8 @@ for i in range (7):
     elif userinput < 1:
         NegetiveCount += 1
     elif userinput == -0:
+        print("Why would you even enter -0?")             #I just wanted to make an easter egg ok but Python dosn't understand when you type -0   :(
         ZeroCount += 1
-        print("Why would you even enter -0?")
     else:
         ZeroCount +=1
 
