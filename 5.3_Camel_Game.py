@@ -4,12 +4,15 @@ CAMEL GAME
 The pseudo-code for how to code this game is in Chapter 5 of the Python Jedi book
 '''
 
-FortniteMMR = 0
-Tiredness = 0
+YourFortniteMMR = 40
+OtherPlayeMMR = 60
+Grades = 100
 FailingSchool = 0
+DaysUntilWorldCup = 30
 
 Done = False
 print ("Welcome to Fortnite pro simulator. In this game your goal is to qalify for the Fortnite world cup without failing school or dying from lack of sleep.")
+print("To qualify, in 30 days you must have more MMR than the other players.")
 while not Done:
 
     print("A to sleep today.")
@@ -23,9 +26,14 @@ while not Done:
     if TodaysChoice.upper() == "G":
         break
         Done = True
-    if TodaysChoice.upper() == "F":
-        pass
-    if TodaysChoice.upper() == "A":
+    elif TodaysChoice.upper() == "F":
+        print("Your MMR is", YourFortniteMMR)
+        print("The other players MMR is", OtherPlayeMMR)
+        print("You are this tired:", Tiredness)
+        print("Your grades are", Grades)
+        print("Days until World cup:", DaysUntilWorldCup)
+        continue
+    elif TodaysChoice.upper() == "A":
         pass
     elif TodaysChoice.upper() == "B":
         pass
