@@ -38,9 +38,8 @@ while not Done:
         DaysUntilWorldCup =- 1
         Tiredness = 0
         print("You are now well rested.")
-        MMROthersGainedToday = random.randint(7,14)
-        OtherPlayeMMR += MMROthersGainedToday
-        Print("The other players new MMr is:", OtherPlayeMMR)
+        OtherPlayeMMR += random.randint(7,14)
+        Print("The other players new MMR is", OtherPlayeMMR)
         print("Your Fortnite MMR and grades did not change.")
     elif TodaysChoice.upper() == "B":
         pass
