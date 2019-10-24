@@ -39,10 +39,10 @@ while not Done:
         Tiredness = 0
         print("You are now well rested.")
         OtherPlayeMMR += random.randint(7,14)
-        Print("The other players new MMR is", OtherPlayeMMR)
+        print("The other players new MMR is", OtherPlayeMMR)
         print("Your Fortnite MMR and grades did not change.")
-    elif TodaysChoice.upper() == "B":
-        pass
+    elif TodaysChoice.upper() == "B": #left off here, line 12 on pythin jedi
+
     elif TodaysChoice.upper() == "C":
         pass
     elif TodaysChoice.upper() == "D":
