@@ -4,10 +4,11 @@ CAMEL GAME
 The pseudo-code for how to code this game is in Chapter 5 of the Python Jedi book
 '''
 
+import random
 YourFortniteMMR = 40
 OtherPlayeMMR = 60
 Grades = 100
-FailingSchool = 0
+Tiredness = 0
 DaysUntilWorldCup = 30
 
 Done = False
@@ -34,7 +35,13 @@ while not Done:
         print("Days until World cup:", DaysUntilWorldCup)
         continue
     elif TodaysChoice.upper() == "A":
-        pass
+        DaysUntilWorldCup =- 1
+        Tiredness = 0
+        print("You are now well rested.")
+        MMROthersGainedToday = random.randint(7,14)
+        OtherPlayeMMR += MMROthersGainedToday
+        Print("The other players new MMr is:", OtherPlayeMMR)
+        print("Your Fortnite MMR and grades did not change.")
     elif TodaysChoice.upper() == "B":
         pass
     elif TodaysChoice.upper() == "C":
