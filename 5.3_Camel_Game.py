@@ -15,9 +15,20 @@ while not Done:
     print("F to see your current status. (This will NOT use up todays action)")
     print("G to give up on your goal of becoming a pro Fortnite player, exits game.")
 
+    TodaysChoice = str(input("What are you going to do today? "))
+    if TodaysChoice.upper() == "G":
+        break
+        Done = True
+    if TodaysChoice.upper() == "F":
+        pass
+    if TodaysChoice.upper() == "A":
+        pass
+    elif TodaysChoice.upper() == "B":
+        pass
+    elif TodaysChoice.upper() == "C":
+        pass
+    elif TodaysChoice.upper() == "D":
+        pass
 
 
-
-
-
-
+print("Thanks for playing Fortnite pro simulator!")
