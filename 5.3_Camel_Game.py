@@ -45,7 +45,7 @@ while not Done:
         DaysUntilWorldCup -= 1
         YourFortniteMMR += random.randint(5,12)
         print("Your new MMR is", YourFortniteMMR)
-        OtherPlayeMMR += random.randint(7, 14)
+        OtherPlayerMMR += random.randint(7, 14)
         print("The other players new MMR is", OtherPlayerMMR)
         Tiredness += 1
         BadGrades += 1
@@ -54,7 +54,7 @@ while not Done:
         DaysUntilWorldCup -= 1
         YourFortniteMMR += random.randint(10, 20)
         print("Your new MMR is", YourFortniteMMR)
-        OtherPlayeMMR += random.randint(7, 14)
+        OtherPlayerMMR += random.randint(7, 14)
         print("The other players new MMR is", OtherPlayerMMR)
         Tiredness += 1
         BadGrades += random.randint(1,3)
@@ -62,7 +62,7 @@ while not Done:
     elif TodaysChoice.upper() == "D":
         DaysUntilWorldCup -=1
         print("Your fortnite MMR did not change.")
-        OtherPlayeMMR += random.randint(7, 14)
+        OtherPlayerMMR += random.randint(7, 14)
         print("The other players new MMR is", OtherPlayerMMR)
         print("You are the same amount of tired as yesterday")
         BadGrades = 0
@@ -89,3 +89,4 @@ while not Done:
 
 
 print("Thanks for playing Fortnite pro simulator.")
+#Add chance of oasis and make other players get mmr slower
