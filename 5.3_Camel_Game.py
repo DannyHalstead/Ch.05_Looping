@@ -6,8 +6,8 @@ The pseudo-code for how to code this game is in Chapter 5 of the Python Jedi boo
 
 import random
 YourFortniteMMR = 40
-OtherPlayeMMR = 60
-Grades = 100
+OtherPlayerMMR = 60
+BadGrades = 0
 Tiredness = 0
 DaysUntilWorldCup = 30
 
@@ -29,24 +29,55 @@ while not Done:
         Done = True
     elif TodaysChoice.upper() == "F":
         print("Your MMR is", YourFortniteMMR)
-        print("The other players MMR is", OtherPlayeMMR)
+        print("The other players MMR is", OtherPlayerMMR)
         print("You are this tired:", Tiredness)
-        print("Your grades are", Grades)
+        print("Your grades are this bad from one to ten ", BadGrades)
         print("Days until World cup:", DaysUntilWorldCup)
         continue
     elif TodaysChoice.upper() == "A":
-        DaysUntilWorldCup =- 1
+        DaysUntilWorldCup -= 1
         Tiredness = 0
         print("You are now well rested.")
-        OtherPlayeMMR += random.randint(7,14)
-        print("The other players new MMR is", OtherPlayeMMR)
+        OtherPlayerMMR += random.randint(7,14)
+        print("The other players new MMR is", OtherPlayerMMR)
         print("Your Fortnite MMR and grades did not change.")
-    elif TodaysChoice.upper() == "B": #left off here, line 12 on pythin jedi
-
+    elif TodaysChoice.upper() == "B":
+        DaysUntilWorldCup -= 1
+        YourFortniteMMR += random.randint(5,12)
+        print("Your new MMR is", YourFortniteMMR)
+        OtherPlayeMMR += random.randint(7, 14)
+        print("The other players new MMR is", OtherPlayerMMR)
+        Tiredness += 1
+        BadGrades += 1
+        "You are a bit more tired then before and your grades are a bit worse"
     elif TodaysChoice.upper() == "C":
-        pass
+        DaysUntilWorldCup -= 1
+        YourFortniteMMR += random.randint(10, 20)
+        print("Your new MMR is", YourFortniteMMR)
+        OtherPlayeMMR += random.randint(7, 14)
+        print("The other players new MMR is", OtherPlayerMMR)
+        Tiredness += 1
+        BadGrades += random.randint(1,3)
+        print("You are a bit more tired then before and your grades are worse")
     elif TodaysChoice.upper() == "D":
-        pass
+        DaysUntilWorldCup -=1
+        print("Your fortnite MMR did not change.")
+        OtherPlayeMMR += random.randint(7, 14)
+        print("The other players new MMR is", OtherPlayerMMR)
+        print("You are the same amount of tired as yesterday")
+        BadGrades = 0
+        print("Your grades are good now.")
+
+    if Tiredness > 6:
+        print("You have died of tiredness.")
+        break
+    elif Tiredness > 4:
+        print("You are very tired and need sleep soon.")
+    if BadGrades >8:
+        print("You failed out of school.")
+        break
+    elif BadGrades >5:
+        print("You are doing really bad in school and need to study soon.")
 
 
-print("Thanks for playing Fortnite pro simulator!")
+print("Thanks for playing Fortnite pro simulator.")
