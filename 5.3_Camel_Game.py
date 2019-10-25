@@ -79,5 +79,13 @@ while not Done:
     elif BadGrades >5:
         print("You are doing really bad in school and need to study soon.")
 
+    if DaysUntilWorldCup == 0:
+        if YourFortniteMMR > OtherPlayerMMR:
+            print ("You won")
+            break
+        else:
+            print("You lost")
+            break
+
 
 print("Thanks for playing Fortnite pro simulator.")
