@@ -28,6 +28,8 @@ while not Done:
         break
         Done = True
     elif TodaysChoice.upper() == "F":
+        print(" ")
+        print(" ")
         print("Your MMR is", YourFortniteMMR)
         print("The other players MMR is", OtherPlayerMMR)
         print("You are this tired:", Tiredness)
@@ -81,14 +83,14 @@ while not Done:
 
     if DaysUntilWorldCup == 0:
         if YourFortniteMMR > OtherPlayerMMR:
-            print ("You won, you are now a Fortnite pro.")
+            print ("You won, you are now a Fortnite pro!")
             break
         else:
-            print("You lost, you will never be a Fortnite pro.")
+            print("Your MMR is too low compared to the other players, you will never be a Fortnite pro.")
             break
     else:
         print("Days until world cup: ", DaysUntilWorldCup)
         print(" ")
         print(" ")
 
-print("Thanks for playing Fortnite pro simulator.")
+print("Thanks for playing.")
