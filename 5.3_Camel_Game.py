@@ -9,11 +9,11 @@ YourFortniteMMR = 40
 OtherPlayerMMR = 60
 BadGrades = 0
 Tiredness = 0
-DaysUntilWorldCup = 13
+DaysUntilWorldCup = 12
 
 Done = False
 print ("Welcome to Fortnite pro simulator. In this game your goal is to qalify for the Fortnite world cup without failing school or dying from lack of sleep.")
-print("To qualify, in 13 days you must have more MMR than the other players.")
+print("To qualify, in 12 days you must have more MMR than the other players.")
 while not Done:
 
     print("A to sleep today.")
