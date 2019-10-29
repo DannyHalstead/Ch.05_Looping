@@ -38,31 +38,31 @@ while not Done:
         DaysUntilWorldCup -= 1
         Tiredness = 0
         print("You are now well rested.")
-        OtherPlayerMMR += random.randint(7,14)
+        OtherPlayerMMR += random.randint(7,12)
         print("The other players new MMR is", OtherPlayerMMR)
         print("Your Fortnite MMR and grades did not change.")
     elif TodaysChoice.upper() == "B":
         DaysUntilWorldCup -= 1
-        YourFortniteMMR += random.randint(5,12)
+        YourFortniteMMR += random.randint(6,12)
         print("Your new MMR is", YourFortniteMMR)
-        OtherPlayerMMR += random.randint(7, 14)
+        OtherPlayerMMR += random.randint(7, 12)
         print("The other players new MMR is", OtherPlayerMMR)
         Tiredness += 1
         BadGrades += 1
-        "You are a bit more tired then before and your grades are a bit worse"
+        "You are a bit more tired then before and your grades are a bit worse."
     elif TodaysChoice.upper() == "C":
         DaysUntilWorldCup -= 1
-        YourFortniteMMR += random.randint(10, 20)
+        YourFortniteMMR += random.randint(12, 20)
         print("Your new MMR is", YourFortniteMMR)
-        OtherPlayerMMR += random.randint(7, 14)
+        OtherPlayerMMR += random.randint(7, 12)
         print("The other players new MMR is", OtherPlayerMMR)
         Tiredness += 1
         BadGrades += random.randint(1,3)
-        print("You are a bit more tired then before and your grades are worse")
+        print("You are a more tired then before and your grades are worse")
     elif TodaysChoice.upper() == "D":
         DaysUntilWorldCup -=1
         print("Your fortnite MMR did not change.")
-        OtherPlayerMMR += random.randint(7, 14)
+        OtherPlayerMMR += random.randint(7, 12)
         print("The other players new MMR is", OtherPlayerMMR)
         print("You are the same amount of tired as yesterday")
         BadGrades = 0
@@ -89,4 +89,3 @@ while not Done:
 
 
 print("Thanks for playing Fortnite pro simulator.")
-#Add chance of oasis and make other players get mmr slower
