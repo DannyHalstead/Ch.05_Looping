@@ -31,7 +31,7 @@ while not Done:
         print("Your MMR is", YourFortniteMMR)
         print("The other players MMR is", OtherPlayerMMR)
         print("You are this tired:", Tiredness)
-        print("Your grades are this bad from one to ten ", BadGrades)
+        print("Your grades are this bad", BadGrades)
         print("Days until World cup:", DaysUntilWorldCup)
         continue
     elif TodaysChoice.upper() == "A":
@@ -52,19 +52,19 @@ while not Done:
         "You are a bit more tired then before and your grades are a bit worse."
     elif TodaysChoice.upper() == "C":
         DaysUntilWorldCup -= 1
-        YourFortniteMMR += random.randint(12, 20)
+        YourFortniteMMR += random.randint(14, 21)
         print("Your new MMR is", YourFortniteMMR)
         OtherPlayerMMR += random.randint(7, 12)
         print("The other players new MMR is", OtherPlayerMMR)
-        Tiredness += 1
-        BadGrades += random.randint(1,3)
-        print("You are a more tired then before and your grades are worse")
+        Tiredness += random.randint(1,3)
+        BadGrades += 1
+        print("You are considerably more tired then before and your grades are worse")
     elif TodaysChoice.upper() == "D":
         DaysUntilWorldCup -=1
         print("Your fortnite MMR did not change.")
         OtherPlayerMMR += random.randint(7, 12)
         print("The other players new MMR is", OtherPlayerMMR)
-        print("You are the same amount of tired as yesterday")
+        print("You are as tired as you were yesterday")
         BadGrades = 0
         print("Your grades are good now.")
 
@@ -81,11 +81,12 @@ while not Done:
 
     if DaysUntilWorldCup == 0:
         if YourFortniteMMR > OtherPlayerMMR:
-            print ("You won")
+            print ("You won, you are now a Fortnite pro.")
             break
         else:
-            print("You lost")
+            print("You lost, you will never be a Fortnite pro.")
             break
-
+    else:
+        print("Days until world cup: ", DaysUntilWorldCup)
 
 print("Thanks for playing Fortnite pro simulator.")
