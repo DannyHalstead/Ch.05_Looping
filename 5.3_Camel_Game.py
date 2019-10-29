@@ -9,11 +9,11 @@ YourFortniteMMR = 40
 OtherPlayerMMR = 60
 BadGrades = 0
 Tiredness = 0
-DaysUntilWorldCup = 30
+DaysUntilWorldCup = 13
 
 Done = False
 print ("Welcome to Fortnite pro simulator. In this game your goal is to qalify for the Fortnite world cup without failing school or dying from lack of sleep.")
-print("To qualify, in 30 days you must have more MMR than the other players.")
+print("To qualify, in 13 days you must have more MMR than the other players.")
 while not Done:
 
     print("A to sleep today.")
@@ -68,16 +68,16 @@ while not Done:
         BadGrades = 0
         print("Your grades are good now.")
 
-    if Tiredness > 6:
+    if Tiredness > 8:
         print("You have died of tiredness.")
         break
     elif Tiredness > 4:
-        print("You are very tired and need sleep soon.")
+        print("YOU NEED TO SLEEP SOON OR YOU WILL DIE!!!!!!!!!!")
     if BadGrades >8:
         print("You failed out of school.")
         break
     elif BadGrades >5:
-        print("You are doing really bad in school and need to study soon.")
+        print("YOU NEED TO STUDY SOON OR YOU WILL FAIL SCHOOL!!!!!!!!!!!!")
 
     if DaysUntilWorldCup == 0:
         if YourFortniteMMR > OtherPlayerMMR:
@@ -88,5 +88,7 @@ while not Done:
             break
     else:
         print("Days until world cup: ", DaysUntilWorldCup)
+        print(" ")
+        print(" ")
 
 print("Thanks for playing Fortnite pro simulator.")
