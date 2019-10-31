@@ -69,6 +69,11 @@ while not Done:
         print("You are as tired as you were yesterday")
         BadGrades = 0
         print("Your grades are good now.")
+    else:
+        print(" ")
+        print(" ")
+        print("Your input was invalid, please try again.")
+        continue
 
     if Tiredness > 8:
         print("You have died of tiredness.")
