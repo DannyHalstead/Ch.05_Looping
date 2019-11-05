@@ -45,7 +45,7 @@ while not Done:
         print("Your Fortnite MMR and grades did not change.")
     elif TodaysChoice.upper() == "B":
         DaysUntilWorldCup -= 1
-        YourFortniteMMR += random.randint(6,12)
+        YourFortniteMMR += random.randint(8,12)
         print("Your new MMR is", YourFortniteMMR)
         OtherPlayerMMR += random.randint(7, 12)
         print("The other players new MMR is", OtherPlayerMMR)
@@ -88,10 +88,12 @@ while not Done:
 
     if DaysUntilWorldCup == 0:
         if YourFortniteMMR > OtherPlayerMMR:
+            print(" ")
             print("The World Cup is starting.")
             print ("YOU WON! YOU ARE NOW A FORTNITE PRO!")
             break
         else:
+            print(" ")
             print("The World Cup is Starting.")
             print("YOUR MMR WAS TOO LOW, YOU HAVE FAILED TO BECOME A PRO!")
             break
