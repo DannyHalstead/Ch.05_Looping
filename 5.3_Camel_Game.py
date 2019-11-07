@@ -17,7 +17,7 @@ print("To qualify, in", DaysUntilWorldCup,  "days you must have more MMR than th
 while not Done:
 
     print("A to sleep today.")
-    print("B to grind fortnite for 4 hours today.")
+    print("B to grind Fortnite for 4 hours today.")
     print("C to grind Fortnite for 10 hours today")
     print("D to study today.")
     print("F to see your current status. (This will NOT use up todays action)")
